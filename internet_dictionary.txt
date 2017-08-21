@@ -1,0 +1,10 @@
+a1 = {the Provider} suspend {the Internet service immediately}
+a3 = {the Client} pay {price 3P}
+a2 = {the Client} notify {the Provider by sending an e-mail specifying that he will pay later}
+a5 = {the Internet Service} become {operative}
+a4 = {the Internet traffic} become {high}
+a7 = {the Client} provide {false information to the Client Relations Department of the Provider}
+a6 = {the Client} submit {within seven days the Personal Data Form from his account on the Provider web page to the Client Relations Department of the Provider}
+a9 = {the Client} pay {price 2P}
+a8 = {the Client} pay {price P}
+b1 = {the Client} lower {the Internet traffic to the normal level}

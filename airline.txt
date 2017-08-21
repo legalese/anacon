@@ -1,0 +1,34 @@
+[clauses]
+if {the flight} leaves {in two hours}
+then each of
+  - {the ground crew} must open {the check-in desk 2 hours before} and
+  {the ground crew} must request {the passenger manifest from the airline}, otherwise
+  {the ground crew} must pay {a fine}
+  - {the airline crew} must provide {the passenger manifest to the ground crew}, otherwise
+  {the airline crew} must pay {a fine}
+  - if {the ground crew} open {the check-in desk 2 hours before} 
+  then first {the check-in crew} must initiate {the check-in process}, 
+  {the check-in crew} must check {that the passport details match what is written on the ticket},
+  {the check-in crew} must check {that the luggage is within the weight limits}, then
+  {the check-in crew} must issue {the boarding pass}, otherwise
+  {the check-in crew} must pay {a fine}
+  - {the ground crew} must not issue {any boarding passes without inspecting that the details are correct beforehand}, otherwise
+  {the ground crew} must pay {a fine}
+  - {the ground crew} must close {the check-in desk 20 mins before flight leaves}, otherwise
+  {the ground crew} must pay {a fine}
+  - if {the ground crew} closes {the check-in desk 20 mins before flight leaves} then 
+  both
+    - {the ground crew} must send {the luggage information to the airline}
+    - {the ground crew} must not issue {boarding pass} 
+    - {the ground crew} must not reopen {the check-in desk}
+[/clauses]
+[contradictions]
+  {the ground crew} open {the check-in desk 2 hours before} # {the ground crew} close {the check-in desk 20 mins before flight leaves} ;
+  {the ground crew} open {the check-in desk 2 hours before} # {the ground crew} reopen {the check-in desk} ;
+  {the check-in crew} check {that the passport details match what is written on the ticket} # {the check-in crew} check {that the luggage is within the weight limits} ;
+  {the check-in crew} issue {the boarding pass} # {the check-in crew} check {that the passport details match what is written on the ticket} ;
+[/contradictions]
+
+NOTES
+    1. open and close gate are at same level
+    2. causality/temporal relations are not correctly modelled

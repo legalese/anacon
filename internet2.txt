@@ -1,0 +1,24 @@
+[clauses]
+{the Client} must submit {the data} ;
+if {the Client} submits {the data} then each of
+  - {the Provider} must check {the data}
+  - if first {the Provider} checks {the data}, then {the Provider} disapproves {the data} then {the Provider} may cancel {the contract}
+  - if first {the Provider} checks {the data}, then {the Provider} approves {the data} then each of
+    - {the Internet Service} must become {operative}
+    - if {the Internet Service} becomes {operative} then always
+    if {the Internet traffic} becomes {high} then {the Client} must pay {price P}, otherwise
+    first {the Client} must notify {the Provider by sending an e-mail specifying that he will pay later},
+    {the Client} must lower {the Internet traffic to the normal level}, then
+    {the Client} must pay {price 2P}, otherwise
+    {the Client} is required to pay {price 3P} ;
+[/clauses]
+[contradictions]
+  {the Client} submit {the data} # {the Provider} check {the data} ;
+  {the Provider} approve {the data} # {the Provider} disapprove {the data} ;
+  {the Client} submit {the data} # {the Internet Service} become {operative} ;
+  {the Provider} approve {the data} # {the Internet Service} become {operative} ;
+  {the Provider} disapprove {the data} # {the Internet Service} become {operative} ;
+  {the Client} pay {price P} # {the Client} pay {price 2P} ;
+  {the Client} pay {price 2P} # {the Client} pay {price 3P} ;
+  {the Client} pay {price 3P} # {the Client} pay {price P} ;
+[/contradictions]

@@ -1,0 +1,16 @@
+b4 = {the flight} leave {in two hours}
+b2 = {the ground crew} send {the luggage information to the airline}
+b7 = {the check-in crew} pay {a fine}
+b3 = {the airline crew} pay {a fine}
+b6 = {the ground crew} close {the check-in desk}
+a1 = {the ground crew} issue {boarding pass}
+b5 = {the check-in crew} check {that the passport details match what is written on the ticket}
+a3 = {the ground crew} pay {a fine}
+a2 = {the ground crew} request {the passenger manifest from the airline}
+a5 = {the flight} leave {in 20 mins}
+a4 = {the ground crew} reopen {the check-in desk}
+a7 = {the check-in crew} issue {the boarding pass}
+a6 = {the airline crew} provide {the passenger manifest to the ground crew}
+a9 = {the check-in crew} initiate {the check-in process}
+a8 = {the check-in crew} check {that the luggage is within the weight limits}
+b1 = {the ground crew} open {the check-in desk 2 hours before}

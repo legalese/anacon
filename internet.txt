@@ -1,0 +1,23 @@
+[clauses]
+always each of
+  - {the Client} shall not provide {false information to the Client Relations Department of the Provider}, otherwise
+  {the Provider} may suspend {the Internet service immediately}
+  - if {the Internet traffic} becomes {high} then {the Client} must pay {price P}, otherwise
+  first {the Client} must notify {the Provider by sending an e-mail specifying that he will pay later},
+  {the Client} must lower {the Internet traffic to the normal level}, then
+  {the Client} must pay {price 2P}, otherwise
+  {the Client} is required to pay {price 3P}
+  - if {the Internet Service} becomes {operative} then {the Client} shall submit {within seven days the Personal Data Form from his account on the Provider web page to the Client Relations Department of the Provider}
+[/clauses]
+[contradictions]
+  {the Internet traffic} become {high} # {the Internet Service} become {operative} ;
+  {the Provider} suspend {the Internet service immediately} # {the Internet traffic} become {high} ;
+  {the Client} provide {false information to the Client Relations Department of the Provider} # {the Internet traffic} become {high} ;
+  {the Client} pay {price P} # {the Client} pay {price 2P} ;
+  {the Client} pay {price 2P} # {the Client} pay {price 3P} ;
+  {the Client} pay {price 3P} # {the Client} pay {price P} ;
+  {the Client} pay {price P} # {the Client} notify {the Provider by sending an e-mail specifying that he will pay later} ;
+  {the Client} pay {price 2P} # {the Client} notify {the Provider by sending an e-mail specifying that he will pay later} ;
+  {the Client} pay {price 3P} # {the Client} notify {the Provider by sending an e-mail specifying that he will pay later} ;
+  {the Client} provide {false information to the Client Relations Department of the Provider} # {the Client} submit {within seven days the Personal Data Form from his account on the Provider web page to the Client Relations Department of the Provider} ;
+[/contradictions]

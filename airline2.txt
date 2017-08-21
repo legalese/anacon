@@ -1,0 +1,141 @@
+[clauses]
+if {the flight} leaves {in two hours} then both
+  - {the ground crew} must open {the check-in desk 2 hours before}
+  - if {the ground crew} open {the check-in desk 2 hours before} then both
+    - {the ground crew} must request {the passenger manifest from the airline}, otherwise {the ground crew} must pay {a fine}
+    - if {the ground crew} requests {the passenger manifest from the airline} then both
+      - {the airline crew} must provide {the passenger manifest to the ground crew}, otherwise {the airline crew} must pay {a fine}
+      - if {the airline crew} provides {the passenger manifest to the ground crew} then each of
+        - first {the check-in crew} must initiate {the check-in process}, 
+        {the check-in crew} must check {that the passport details match what is written on the ticket},
+        {the check-in crew} must check {that the luggage is within the weight limits}, then
+        {the check-in crew} must issue {the boarding pass}, otherwise
+        {the check-in crew} must pay {a fine}
+        - {the ground crew} must close {the check-in desk 20 mins before flight leaves}, otherwise {the ground crew} must pay {a fine}
+        - if {the ground crew} closes {the check-in desk 20 mins before flight leaves} then each of
+          - {the ground crew} must send {the luggage information to the airline}
+          - {the ground crew} must not issue {boarding pass} 
+          - {the ground crew} must not reopen {the check-in desk}
+[/clauses]
+[contradictions]
+    {the ground crew} issue {boarding pass} # {the check-in crew} check {that the luggage is within the weight limits} ;
+    {the ground crew} issue {boarding pass} # {the check-in crew} issue {the boarding pass} ;
+    {the ground crew} issue {boarding pass} # {the ground crew} pay {a fine} ;
+    {the ground crew} issue {boarding pass} # {the check-in crew} check {that the passport details match what is written on the ticket} ;
+    {the ground crew} issue {boarding pass} # {the ground crew} close {the check-in desk 20 mins before flight leaves} ;
+    {the ground crew} issue {boarding pass} # {the check-in crew} pay {a fine} ;
+    {the ground crew} issue {boarding pass} # {the ground crew} request {the passenger manifest from the airline} ;
+    {the ground crew} issue {boarding pass} # {the airline crew} provide {the passenger manifest to the ground crew} ;
+    {the ground crew} issue {boarding pass} # {the ground crew} reopen {the check-in desk} ;
+    {the ground crew} issue {boarding pass} # {the airline crew} pay {a fine} ;
+    {the ground crew} issue {boarding pass} # {the flight} leave {in two hours} ;
+    {the ground crew} issue {boarding pass} # {the ground crew} open {the check-in desk 2 hours before} ;
+    {the ground crew} issue {boarding pass} # {the check-in crew} initiate {the check-in process} ;
+    {the ground crew} issue {boarding pass} # {the ground crew} send {the luggage information to the airline} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the check-in crew} issue {the boarding pass} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the ground crew} pay {a fine} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the check-in crew} check {that the passport details match what is written on the ticket} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the ground crew} close {the check-in desk 20 mins before flight leaves} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the check-in crew} pay {a fine} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the ground crew} request {the passenger manifest from the airline} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the airline crew} provide {the passenger manifest to the ground crew} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the ground crew} reopen {the check-in desk} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the airline crew} pay {a fine} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the flight} leave {in two hours} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the ground crew} open {the check-in desk 2 hours before} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the check-in crew} initiate {the check-in process} ;
+    {the check-in crew} check {that the luggage is within the weight limits} # {the ground crew} send {the luggage information to the airline} ;
+    {the check-in crew} issue {the boarding pass} # {the ground crew} pay {a fine} ;
+    {the check-in crew} issue {the boarding pass} # {the check-in crew} check {that the passport details match what is written on the ticket} ;
+    {the check-in crew} issue {the boarding pass} # {the ground crew} close {the check-in desk 20 mins before flight leaves} ;
+    {the check-in crew} issue {the boarding pass} # {the check-in crew} pay {a fine} ;
+    {the check-in crew} issue {the boarding pass} # {the ground crew} request {the passenger manifest from the airline} ;
+    {the check-in crew} issue {the boarding pass} # {the airline crew} provide {the passenger manifest to the ground crew} ;
+    {the check-in crew} issue {the boarding pass} # {the ground crew} reopen {the check-in desk} ;
+    {the check-in crew} issue {the boarding pass} # {the airline crew} pay {a fine} ;
+    {the check-in crew} issue {the boarding pass} # {the flight} leave {in two hours} ;
+    {the check-in crew} issue {the boarding pass} # {the ground crew} open {the check-in desk 2 hours before} ;
+    {the check-in crew} issue {the boarding pass} # {the check-in crew} initiate {the check-in process} ;
+    {the check-in crew} issue {the boarding pass} # {the ground crew} send {the luggage information to the airline} ;
+    {the ground crew} pay {a fine} # {the check-in crew} check {that the passport details match what is written on the ticket} ;
+    {the ground crew} pay {a fine} # {the ground crew} close {the check-in desk 20 mins before flight leaves} ;
+    {the ground crew} pay {a fine} # {the check-in crew} pay {a fine} ;
+    {the ground crew} pay {a fine} # {the ground crew} request {the passenger manifest from the airline} ;
+    {the ground crew} pay {a fine} # {the airline crew} provide {the passenger manifest to the ground crew} ;
+    {the ground crew} pay {a fine} # {the ground crew} reopen {the check-in desk} ;
+    {the ground crew} pay {a fine} # {the airline crew} pay {a fine} ;
+    {the ground crew} pay {a fine} # {the flight} leave {in two hours} ;
+    {the ground crew} pay {a fine} # {the ground crew} open {the check-in desk 2 hours before} ;
+    {the ground crew} pay {a fine} # {the check-in crew} initiate {the check-in process} ;
+    {the ground crew} pay {a fine} # {the ground crew} send {the luggage information to the airline} ;
+    {the check-in crew} check {that the passport details match what is written on the ticket} # {the ground crew} close {the check-in desk 20 mins before flight leaves} ;
+    {the check-in crew} check {that the passport details match what is written on the ticket} # {the check-in crew} pay {a fine} ;
+    {the check-in crew} check {that the passport details match what is written on the ticket} # {the ground crew} request {the passenger manifest from the airline} ;
+    {the check-in crew} check {that the passport details match what is written on the ticket} # {the airline crew} provide {the passenger manifest to the ground crew} ;
+    {the check-in crew} check {that the passport details match what is written on the ticket} # {the ground crew} reopen {the check-in desk} ;
+    {the check-in crew} check {that the passport details match what is written on the ticket} # {the airline crew} pay {a fine} ;
+    {the check-in crew} check {that the passport details match what is written on the ticket} # {the flight} leave {in two hours} ;
+    {the check-in crew} check {that the passport details match what is written on the ticket} # {the ground crew} open {the check-in desk 2 hours before} ;
+    {the check-in crew} check {that the passport details match what is written on the ticket} # {the check-in crew} initiate {the check-in process} ;
+    {the check-in crew} check {that the passport details match what is written on the ticket} # {the ground crew} send {the luggage information to the airline} ;
+    {the ground crew} close {the check-in desk 20 mins before flight leaves} # {the check-in crew} pay {a fine} ;
+    {the ground crew} close {the check-in desk 20 mins before flight leaves} # {the ground crew} request {the passenger manifest from the airline} ;
+    {the ground crew} close {the check-in desk 20 mins before flight leaves} # {the airline crew} provide {the passenger manifest to the ground crew} ;
+    {the ground crew} close {the check-in desk 20 mins before flight leaves} # {the ground crew} reopen {the check-in desk} ;
+    {the ground crew} close {the check-in desk 20 mins before flight leaves} # {the airline crew} pay {a fine} ;
+    {the ground crew} close {the check-in desk 20 mins before flight leaves} # {the flight} leave {in two hours} ;
+    {the ground crew} close {the check-in desk 20 mins before flight leaves} # {the ground crew} open {the check-in desk 2 hours before} ;
+    {the ground crew} close {the check-in desk 20 mins before flight leaves} # {the check-in crew} initiate {the check-in process} ;
+    {the ground crew} close {the check-in desk 20 mins before flight leaves} # {the ground crew} send {the luggage information to the airline} ;
+    {the check-in crew} pay {a fine} # {the ground crew} request {the passenger manifest from the airline} ;
+    {the check-in crew} pay {a fine} # {the airline crew} provide {the passenger manifest to the ground crew} ;
+    {the check-in crew} pay {a fine} # {the ground crew} reopen {the check-in desk} ;
+    {the check-in crew} pay {a fine} # {the airline crew} pay {a fine} ;
+    {the check-in crew} pay {a fine} # {the flight} leave {in two hours} ;
+    {the check-in crew} pay {a fine} # {the ground crew} open {the check-in desk 2 hours before} ;
+    {the check-in crew} pay {a fine} # {the check-in crew} initiate {the check-in process} ;
+    {the check-in crew} pay {a fine} # {the ground crew} send {the luggage information to the airline} ;
+    {the ground crew} request {the passenger manifest from the airline} # {the airline crew} provide {the passenger manifest to the ground crew} ;
+    {the ground crew} request {the passenger manifest from the airline} # {the ground crew} reopen {the check-in desk} ;
+    {the ground crew} request {the passenger manifest from the airline} # {the airline crew} pay {a fine} ;
+    {the ground crew} request {the passenger manifest from the airline} # {the flight} leave {in two hours} ;
+    {the ground crew} request {the passenger manifest from the airline} # {the ground crew} open {the check-in desk 2 hours before} ;
+    {the ground crew} request {the passenger manifest from the airline} # {the check-in crew} initiate {the check-in process} ;
+    {the ground crew} request {the passenger manifest from the airline} # {the ground crew} send {the luggage information to the airline} ;
+    {the airline crew} provide {the passenger manifest to the ground crew} # {the ground crew} reopen {the check-in desk} ;
+    {the airline crew} provide {the passenger manifest to the ground crew} # {the airline crew} pay {a fine} ;
+    {the airline crew} provide {the passenger manifest to the ground crew} # {the flight} leave {in two hours} ;
+    {the airline crew} provide {the passenger manifest to the ground crew} # {the ground crew} open {the check-in desk 2 hours before} ;
+    {the airline crew} provide {the passenger manifest to the ground crew} # {the check-in crew} initiate {the check-in process} ;
+    {the airline crew} provide {the passenger manifest to the ground crew} # {the ground crew} send {the luggage information to the airline} ;
+    {the ground crew} reopen {the check-in desk} # {the airline crew} pay {a fine} ;
+    {the ground crew} reopen {the check-in desk} # {the flight} leave {in two hours} ;
+    {the ground crew} reopen {the check-in desk} # {the ground crew} open {the check-in desk 2 hours before} ;
+    {the ground crew} reopen {the check-in desk} # {the check-in crew} initiate {the check-in process} ;
+    {the ground crew} reopen {the check-in desk} # {the ground crew} send {the luggage information to the airline} ;
+    {the airline crew} pay {a fine} # {the flight} leave {in two hours} ;
+    {the airline crew} pay {a fine} # {the ground crew} open {the check-in desk 2 hours before} ;
+    {the airline crew} pay {a fine} # {the check-in crew} initiate {the check-in process} ;
+    {the airline crew} pay {a fine} # {the ground crew} send {the luggage information to the airline} ;
+    {the flight} leave {in two hours} # {the ground crew} open {the check-in desk 2 hours before} ;
+    {the flight} leave {in two hours} # {the check-in crew} initiate {the check-in process} ;
+    {the flight} leave {in two hours} # {the ground crew} send {the luggage information to the airline} ;
+    {the ground crew} open {the check-in desk 2 hours before} # {the check-in crew} initiate {the check-in process} ;
+    {the ground crew} open {the check-in desk 2 hours before} # {the ground crew} send {the luggage information to the airline} ;
+    {the check-in crew} initiate {the check-in process} # {the ground crew} send {the luggage information to the airline} ;
+[/contradictions]
+
+
+NOTES
+    1. Moved everything underneath "if gate open" because open and close gate were at same level
+    2. we have no sequence of obligations.. eg when talking about request/response of manifest 5-6
+    3. Line 8: This written as a sequence of obligations in the CNL (syntactic constraint of CNL),
+        but in CL this is treated as an obligation of a sequence
+        Thus note that the CTD applies to the whole thing, i.e. O(a.b.c)_O(pay)
+    4. Added more contradictions, to reflect temporal/causal relationships between the actions
+    5. Reworded this:
+        - {the ground crew} must not issue {any boarding cards without inspecting that the details are correct beforehand}, otherwise
+      {the ground crew} must pay {a fine}
+    6. Added all possible contradictions, except:
+        {the ground crew} close {the check-in desk 20 mins before flight leaves} # {the check-in crew} initiate {the check-in process} ;
+    7. It seems that closing MUST happen after the check in desk is opened, thus rewriting into airline3.txt

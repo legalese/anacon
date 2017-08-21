@@ -1,0 +1,12 @@
+b2 = {the Client} lower {the Internet traffic to the normal level}
+b3 = {the Client} submit {the data}
+a1 = {the Client} notify {the Provider by sending an e-mail specifying that he will pay later}
+a3 = {the Provider} disapprove {the data}
+a2 = {the Client} pay {price 3P}
+a5 = {the Internet Service} become {operative}
+a4 = {the Provider} cancel {the contract}
+a7 = {the Provider} check {the data}
+a6 = {the Client} pay {price P}
+a9 = {the Internet traffic} become {high}
+a8 = {the Provider} approve {the data}
+b1 = {the Client} pay {price 2P}
